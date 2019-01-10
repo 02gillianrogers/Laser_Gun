@@ -28,13 +28,13 @@ void loop()
   digitalWrite(3, HIGH);
   digitalWrite(5, HIGH);
   digitalWrite(10, HIGH);
-  while (analogRead(A0) == 310) {
+  while (analogRead(A7) == 1) {
     digitalWrite(3, LOW);
     delay(1000); // Wait for 1000 millisecond(s)
-    while (analogRead(A0) == 310) {
+    while (analogRead(A7) == 1) {
       digitalWrite(5, LOW);
       delay(1000); // Wait for 1000 millisecond(s)
-      while (analogRead(A0) == 310) {
+      while (analogRead(A7) == 1) {
         digitalWrite(10, LOW);
       }
     }
